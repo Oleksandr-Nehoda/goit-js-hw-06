@@ -6,7 +6,7 @@ inputRef.addEventListener('blur', onInputValid);
 function onInputValid (event) {
 
     const inputLength = Number(event.currentTarget.value.length);
-    const dataLeng = Number(inputRef.dataset.length);
+    const dataLeng = Number(event.currentTarget.dataset.length);
 
     if (inputLength === dataLeng) {
         
